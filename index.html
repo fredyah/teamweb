@@ -2,13 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/teamweb/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
-    <script type="module" crossorigin src="/teamweb/assets/index-Cwf2qypr.js"></script>
-    <link rel="stylesheet" crossorigin href="/teamweb/assets/index-BGnqF1DV.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   </head>
-  <body>
-    <div id="app"></div>
+  <body data-theme="light">
+
+    <nav>
+      <div class="logo" aria-label="Portfolio Logo"> Team-Portfolio</div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle-Menu" aria-expanded="false" aria-controls="navbarMeun">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul id="navbarMenu" role="menu">
+        <li role="none"><a href="#home" role="menuitem" class="acctive">Home</a></li>
+        <li role="none"><a href="#about" role="menuitem" class="acctive">About</a></li>
+        <li role="none"><a href="#project" role="menuitem" class="acctive">Project</a></li>
+        <li role="none"><a href="#contact" role="menuitem" class="acctive">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark/Light theme" title="Toggle Dark/Light Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+
+    </nav>
+
+
   </body>
 </html>
